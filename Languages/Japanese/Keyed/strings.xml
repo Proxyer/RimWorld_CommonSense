@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- settings -->
+  <fulfill_outdoors_head>アウトドアの必要性</fulfill_outdoors_head>
+  <fulfill_outdoors_label>ずっと屋内作業を続ける事によるデバフを解消するために、屋外に設置した娯楽を優先的に使用する</fulfill_outdoors_label>
+  <fulfill_outdoors_note>※注：屋内と屋外の両方に、同じ種類の娯楽を得られる娯楽物を設置しないようにして下さい。</fulfill_outdoors_note>
+  <clean_head>綺麗好き</clean_head>
+  <clean_before_working_label>研究や料理などの作業を行う前、就寝前に部屋の掃除を行ってからにする</clean_before_working_label>
+  <clean_before_working_note>注：当然ですが、掃除が出来ない人はこの設定を無視します(掃除できないポーンに掃除を期待しないでください)。</clean_before_working_note>
+  <bill_job_pathing_label>仕事先への正確な経路を計算する</bill_job_pathing_label>
+  <bill_job_pathing_note>ただし、CPUに負荷がかかるかもしれません。</bill_job_pathing_note>
+  <clean_after_tending_label>患者の世話をした後、部屋を掃除する</clean_after_tending_label>
+  <clean_after_tending_note>患者の手当をした後に、部屋を掃除するようになりますが、掃除できないポーンに掃除を期待しないでください。</clean_after_tending_note>
+  <meal_stacking_head>食事の重ね方</meal_stacking_head>
+  <meal_stacking_label>人肉などのデバフがつく食事を通常の食事と重ねない</meal_stacking_label>
+  <meal_stacking_note>嫌な食事と通常の食事を混ぜ合わせることは決してないでしょう。</meal_stacking_note>
+  <dont_count_odd_label>奇妙な肉(例：虫の肉)を普通の材料として扱い、普通の食事と一緒に重ねます</dont_count_odd_label>
+  <dont_count_odd_note>虫の肉もそれほど悪くありません...</dont_count_odd_note>
+  <gen_ingredients_head>食事の生成</gen_ingredients_head>
+  <gen_ingredients_label>ランダムに生成された食事には、ランダムな成分を追加する</gen_ingredients_label>
+  <gen_ingredients_note>例：本来イベント入手または襲撃者や商人の持っている食事にはデバフの付かない食材のみが使用されています。このオプションを有効にすればそうとは限らなくなります。</gen_ingredients_note>
+  <add_to_que_label>前のタスクをキューに追加する</add_to_que_label>
+  <add_to_que_note>タスクを実行した後でも彼らは仕事を変えないでしょう。時々それは、仕事が既にとられているなら混乱を引き起こすことがあります。</add_to_que_note>
+  <hauling_over_bills_label>仕事に必要な材料を複数種まとめて運ばせる</hauling_over_bills_label>
+  <hauling_over_bills_note>仕事に取り組むときレシピに必要な材料を１種類だけではなく、可能な限り多くの種類の材料を一度に持ち運びます。</hauling_over_bills_note>
+  <fulfill_needs_head>欲求の完全回復</fulfill_needs_head>
+  <drugs_use_potential_mood_label>ドラッグを許可していても、心情が良いときはドラッグの使用を控える</drugs_use_potential_mood_label>
+  <drugs_use_potential_mood_note>「潜在的な」気分が上限を超えている場合、ポーンはドラッグを使用せす、ドラッグの設定で設定された気分の条件を超えるドラッグの過剰使用を防せぎます。</drugs_use_potential_mood_note>
+  <miscellaneous_head>その他</miscellaneous_head>
+  <extended_recipe_label>レシピに材料のリストを表示する</extended_recipe_label>
+  <extended_recipe_note>曖昧な”材料”表示の代わりに表示されます。</extended_recipe_note>
+  <advanced_head>高度な設定</advanced_head>
+  <advanced_inbetween_cleaning_label>運搬と生産の後に部屋を掃除させる</advanced_inbetween_cleaning_label>
+  <advanced_inbetween_cleaning_note>基本的には、運搬の前に掃除をするでしょう。</advanced_inbetween_cleaning_note>
+  <advanced_haul_all_ings_label>材料を集めてから作業台に向かわせる</advanced_haul_all_ings_label>
+  <advanced_haul_all_ings_note>ポーンは必要な全ての材料を運搬するためにインベントリ(手持ちの在庫に)集めてから、作業台へ届けるようになります。</advanced_haul_all_ings_note>
+  <prefer_spoiling_ingredients_label>ポーンに、腐敗しやすい材料や素材を優先的に消費させる</prefer_spoiling_ingredients_label>
+  <prefer_spoiling_ingredients_note>警告：このオプションを有効にすると、選択可能なアイテムが多い場合、ゲームにラグが発生する可能性があります。</prefer_spoiling_ingredients_note>
+  <UnloadThing>備蓄ゾーンに片付ける</UnloadThing>
+  <UnloadThingCancel>片付けのキャンセル</UnloadThingCancel>
+  <manual_unload_label>所持品の横に"片付け"ボタンを追加する</manual_unload_label>
+  <manual_unload_note>指定アイテムを備蓄ゾーンへ片付けます。備蓄ゾーンに運び込めるアイテムが無い場合、その場に落とします。</manual_unload_note>
+  <put_back_to_inv_label>ポーンに、作業が中断されたアイテムをインベントリに戻させる</put_back_to_inv_label>
+  <put_back_to_inv_note>ポーンのイベントリにあったアイテムを作業で使用している時に、作業が中断された場合、ポーンはそれをインベントリへ戻します</put_back_to_inv_note>
+  <pick_proper_amount_label>必要な分だけお菓子を持ち出す</pick_proper_amount_label>
+  <pick_proper_amount_note>もうチョコレートが放置されることはないでしょう。</pick_proper_amount_note>
+  <Category>カテゴリ</Category>
+  <fun_police_label>ポーンたちが娯楽中や、睡眠中に早く目覚めた場合など、副次的な欲求を完全に満たそうとします</fun_police_label>
+  <fun_police_note>ポーンたちは要求が80％を下回った時にだけ、娯楽の欲求を満たそうとします。彼らはインベントリに予備の食事を持ち歩いて空腹を満たすでしょう。その後、彼らは衛生上の欲求を完全に満たします。</fun_police_note>
+  <numbers_head>変更可能な数（0で無制限）</numbers_head>
+  <op_clean_number_label>予約済の仕事を行う前に清掃するゴミ数上限</op_clean_number_label>
+  <adv_clean_number_label>加工命令の仕事を行う前に清掃するゴミ数上限</adv_clean_number_label>
+  <doc_clean_number_label>治療した後に清掃するゴミ数上限</doc_clean_number_label>
+  <skip_snow_clean_label>ポーンたちに、雪や雨が降っているゾーンで除雪をさせない</skip_snow_clean_label>
+  <skip_snow_clean_note>雪や雨が降っている時は、天候が変わるのを待ちます。</skip_snow_clean_note>
+  <prefer_spoiling_meals_label>ポーンに、腐敗しやすい食事を優先的に食べさせる</prefer_spoiling_meals_label>
+  <prefer_spoiling_meals_note>警告：このオプションを有効にすると、選択可能なアイテムが多い場合、ゲームにラグが発生する可能性があります。</prefer_spoiling_meals_note>
+  <allow_feeding_with_plants_label>ポーンが動物に干し草を与えるのを許可して、奨励します。</allow_feeding_with_plants_label>
+  <allow_feeding_with_plants_note>動物たちはさらに、人間向け以外の食べ物をより好むように奨励されます。</allow_feeding_with_plants_note>
+  <give_sick_joy_drugs_label>ポーンたちは病気のポーンに、娯楽を含む許可されたドラッグか、娯楽が含まれる食事(チョコレート等)を与えます</give_sick_joy_drugs_label>
+  <give_sick_joy_drugs_note>チョコレートを与えられるのに、なぜ会話を?</give_sick_joy_drugs_note>
+  <social_relax_economy_label>ポーンが「過剰な娯楽を得ようとする」のを防ぐために、娯楽の欲求を回復する際にドラッグの使用方法を変更する</social_relax_economy_label>
+  <social_relax_economy_note>通常、ポーンはドラッグを実際に服用する前に1-2時間何もせず座っているため、効果が無駄になります</social_relax_economy_note>
+  <advanced_cleaning_ingest_label>実験中：ポーンはテーブルで食事をしたり、社交的に休憩したりする前に掃除をするようになります</advanced_cleaning_ingest_label>
+  <advanced_cleaning_ingest_note>ポーンは、利用する予定のテーブル周辺を掃除します。食中毒を減らすので役に立つでしょう</advanced_cleaning_ingest_note>
+
+  <mood_regen_label>ポーンの心情が、可能なら睡眠中にゆっくりと50%に近づくようにする</mood_regen_label>
+  <mood_regen_note>ポーンたちを「ベッドや寝袋の上で眠らせる」だけで問題はないはず</mood_regen_note>
+  <safe_wander_label>ポーンは、目的もなくうろうろする場合に悪天候を避けるようする</safe_wander_label>
+  <safe_wander_note>例えば有毒な死の灰が降る屋外に出て行くのを止めます</safe_wander_note>
+  <pathing_head>移動経路</pathing_head>
+  <polite_wander_label>友好的なポーンが敵対的な相手がいる寝室や囚人の独房や刑務所の監獄に迷い込まないようにします</polite_wander_label>
+  <polite_wander_note>これは本当に危険で常識が無い行動ですよね？</polite_wander_note>
+  <ingest_any_drugs_label>インベントリからドラッグの服用を許可する</ingest_any_drugs_label>
+  <ingest_any_drugs_note>食べる事が可能なら、地面に落とさずに服用できるはず</ingest_any_drugs_note>
+  <DoCleanCompToggleLabel>この作業台の周囲を掃除</DoCleanCompToggleLabel>
+  <DoCleanCompToggleDescActive>ポーンたちはこの作業台の周りを掃除します</DoCleanCompToggleDescActive>
+  <DoCleanCompToggleDescInactive>ポーンたちはこの作業台の周囲を掃除しません</DoCleanCompToggleDescInactive>
+  <advanced_inbetween_cleaning_gizmo_label>どの作業台を清掃するかのオンオフを切替えるボタンを表示する</advanced_inbetween_cleaning_gizmo_label>
+  <advanced_inbetween_cleaning_gizmo_note>一部の作業台では清掃できない場合があります</advanced_inbetween_cleaning_gizmo_note>
+
+</LanguageData>
