@@ -53,7 +53,7 @@ namespace CommonSense
             if (room == null)
                 return new List<Filth>();
 
-            PathGrid pathGrid = pawn.Map.pathGrid;
+            PathGrid pathGrid = pawn.Map.pathing.For(pawn).pathGrid;
             if (pathGrid == null)
                 return new List<Filth>();
 
@@ -78,6 +78,7 @@ namespace CommonSense
                 }
             }
             else
+            {
                 enumerable = room.ContainedAndAdjacentThings.OfType<Filth>().Where(delegate (Filth f)
                 {
                     if (f == null || f.Destroyed || !f.Position.InAllowedArea(pawn) || !((WorkGiver_Scanner)cleanFilth.Worker).HasJobOnThing(pawn, f))
@@ -89,6 +90,7 @@ namespace CommonSense
 
                     return true;
                 }).Take(Limit == 0 ? int.MaxValue : Limit);
+            }
             return enumerable;
         }
 
@@ -231,7 +233,7 @@ namespace CommonSense
             }
         }
 
-        public static bool ShouldHideFromWeather(this Pawn pawn)
+        public static bool ShouldHideFromWeather(this Pawn pawn, bool rightNow = false)
         {
             if (!Settings.safe_wander
                 || pawn.Faction != Faction.OfPlayer

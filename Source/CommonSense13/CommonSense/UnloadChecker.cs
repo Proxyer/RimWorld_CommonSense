@@ -78,7 +78,7 @@ namespace CommonSense
     //    }
     //}
 
-    [HarmonyPatch(typeof(GenDrop), nameof(GenDrop.TryDropSpawn_NewTmp))]
+    [HarmonyPatch(typeof(GenDrop), nameof(GenDrop.TryDropSpawn))]
     static class GenPlace_TryDropSpawn_NewTmp_CommonSensePatch
     {
 
