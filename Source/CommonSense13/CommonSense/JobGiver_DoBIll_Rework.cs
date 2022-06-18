@@ -9,7 +9,7 @@ namespace CommonSense
 {
     //protected override IEnumerable<Toil> JobDriver_DoBill.MakeNewToils()
     [HarmonyPatch(typeof(JobDriver_DoBill), "MakeNewToils")]
-    static class JobDriver_DoBill_MakeNewToils_CommonSensePatch
+    public static class JobDriver_DoBill_MakeNewToils_CommonSensePatch
     {
         public class JobDriver_DoBill_Access: JobDriver_DoBill
         {
@@ -278,8 +278,8 @@ namespace CommonSense
                     if (curJob.GetTargetQueue(TargetIndex.A).NullOrEmpty())
                     {
                         LocalTargetInfo A = curJob.GetTarget(TargetIndex.A);
-                        DoCleanComp comp;
-                        if (!Settings.clean_gizmo || (comp = A.Thing?.TryGetComp<DoCleanComp>()) == null || comp.Active)
+                        
+                        if (!Settings.clean_gizmo || A.Thing?.TryGetComp<DoCleanComp>()?.Active != false)
                         {
                             IEnumerable<Filth> l = Utility.SelectAllFilth(FilthList.actor, A, Settings.adv_clean_num);
                             Utility.AddFilthToQueue(curJob, TargetIndex.A, l, FilthList.actor);
@@ -355,7 +355,7 @@ namespace CommonSense
             yield break;
         }
 
-        static bool Prefix(ref IEnumerable<Toil> __result, ref JobDriver_DoBill_Access __instance)
+        public static bool Prefix(ref IEnumerable<Toil> __result, ref JobDriver_DoBill_Access __instance)
         {
             if (!Settings.adv_cleaning && !Settings.adv_haul_all_ings)
                 return true;
