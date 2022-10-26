@@ -1,4 +1,23 @@
-﻿1.1.49
+﻿1.1.54
+- RPGInventory (revamped) integrity things;
+- fixed a problem with pawns moving ingredients to and from a bench on a loop. Thanks to @Des and his pawn Buggy for hooking me up with something substantial to work with!
+
+1.1.53
+- fixed some error when something is happening with some pawns mood that are also off map and also related to toxic fallout;
+- pawns now clean doorways in the rooms.
+
+1.1.52
+- fixed an error when pawns tried to operate already filled gestator;
+- made so pawns start cleaning around bill station without going to it first;
+- fixed stacking/splitting warning;
+
+1.1.51
+- in my defense, I didn't even have a clue what's gestator when I was making fixes for the patch, lol;
+
+1.1.50
+- wasn't long until first bug. Fixed pawns getting stuck trying to do bills (cooking and etc);
+
+1.1.49
 - updated for 1.4. Does everything (or anything) works properly? I have no idea! Enjoy the new patch and upcoming fixes! I sure will.
 
 1.1.48+

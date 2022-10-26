@@ -70,7 +70,7 @@ namespace CommonSense
                 for (int i = 0; i < 200; i++)
                 {
                     IntVec3 intVec = target.Cell + GenRadial.RadialPattern[i];
-                    if (intVec.InBounds(pawn.Map) && intVec.InAllowedArea(pawn) && intVec.GetRoom(pawn.Map) == room)
+                    if (intVec.InBounds(pawn.Map) && intVec.InAllowedArea(pawn) && (intVec.GetRoom(pawn.Map) == room || intVec.GetDoor(pawn.Map) != null))
                         ((List<Filth>)enumerable).AddRange(intVec.GetThingList(pawn.Map).OfType<Filth>().Where(f => !f.Destroyed
                             && ((WorkGiver_Scanner)cleanFilth.Worker).HasJobOnThing(pawn, f)).Take(Limit == 0 ? int.MaxValue : Limit));
                     if (Limit > 0 && enumerable.Count() >= Limit)
@@ -250,12 +250,12 @@ namespace CommonSense
             return true;
         }
 
-        private static bool IsBiocodedOrLinked(this Pawn pawn, Thing thing, bool? inventory = null)
+        public static bool IsBiocodedOrLinked(this Pawn pawn, Thing thing, bool? inventory = null)
         {
             return pawn.IsQuestLodger() && (inventory == true || !EquipmentUtility.QuestLodgerCanUnequip(thing, pawn));
         }
 
-        private static bool IsLocked(this Pawn pawn, Thing thing)
+        public static bool IsLocked(this Pawn pawn, Thing thing)
         {
             Apparel apparel;
             return (apparel = (thing as Apparel)) != null && pawn.apparel != null && pawn.apparel.IsLocked(apparel);
